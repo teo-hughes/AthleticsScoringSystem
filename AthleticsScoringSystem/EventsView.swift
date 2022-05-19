@@ -13,21 +13,16 @@ struct EventsView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                List(viewModel.athletes) { event in
-                    VStack(alignment: .leading) {
-                        Text(event.Name)
-                            .font(.headline)
-                        Text("\(event.Score)")
-                            .font(.subheadline)
-                        Text("\(event.Points)")
-                            .font(.subheadline)
-                    }
+                List(viewModel.events) { event in
+                    
+                    NavigationLink(destination: EventView(event: event), label: {
+                        Text(event.name)
+                    })
                 }
                 
             }
             .onAppear {
                 viewModel.observeEvents()
-                
             }
             .navigationBarTitle("Events")
         }

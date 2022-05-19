@@ -7,12 +7,12 @@
 import SwiftUI
 
 struct Athlete: Identifiable, Codable {
-    var Event: String
-    var Name: String
-    var Points: Int
-    var Position: Int
-    var Score: Double
-    var School: String
+    var event: String
+    var name: String
+    var points: Int
+    var position: Int
+    var score: Double
+    var school: String
     var id: String = UUID().uuidString
 }
 

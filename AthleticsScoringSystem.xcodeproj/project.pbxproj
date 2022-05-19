@@ -15,6 +15,8 @@
 		25020508283660D1004AA574 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25020507283660D1004AA574 /* EventsView.swift */; };
 		2502050C28366110004AA574 /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502050B28366110004AA574 /* FirebaseViewModel.swift */; };
 		2502050F2836611C004AA574 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502050E2836611C004AA574 /* Athlete.swift */; };
+		25E7416928368305004CDB41 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E7416828368305004CDB41 /* Event.swift */; };
+		25E741702836864B004CDB41 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E7416F2836864B004CDB41 /* EventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		25020507283660D1004AA574 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		2502050B28366110004AA574 /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
 		2502050E2836611C004AA574 /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		25E7416828368305004CDB41 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		25E7416F2836864B004CDB41 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		49951E6ECDDF5E9BB2782A13 /* Pods-AthleticsScoringSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthleticsScoringSystem.release.xcconfig"; path = "Target Support Files/Pods-AthleticsScoringSystem/Pods-AthleticsScoringSystem.release.xcconfig"; sourceTree = "<group>"; };
 		F060A56D0BCC92A46B27475B /* Pods-AthleticsScoringSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthleticsScoringSystem.debug.xcconfig"; path = "Target Support Files/Pods-AthleticsScoringSystem/Pods-AthleticsScoringSystem.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +81,8 @@
 				250204E028365FF0004AA574 /* AthleticsScoringSystemApp.swift */,
 				25020507283660D1004AA574 /* EventsView.swift */,
 				2502050B28366110004AA574 /* FirebaseViewModel.swift */,
+				25E7416828368305004CDB41 /* Event.swift */,
+				25E7416F2836864B004CDB41 /* EventView.swift */,
 				2502050E2836611C004AA574 /* Athlete.swift */,
 				250204F028366027004AA574 /* GoogleService-Info.plist */,
 				250204E428365FF1004AA574 /* Assets.xcassets */,
@@ -219,7 +225,9 @@
 				2502050C28366110004AA574 /* FirebaseViewModel.swift in Sources */,
 				250204E128365FF0004AA574 /* AthleticsScoringSystemApp.swift in Sources */,
 				25020508283660D1004AA574 /* EventsView.swift in Sources */,
+				25E741702836864B004CDB41 /* EventView.swift in Sources */,
 				2502050F2836611C004AA574 /* Athlete.swift in Sources */,
+				25E7416928368305004CDB41 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
