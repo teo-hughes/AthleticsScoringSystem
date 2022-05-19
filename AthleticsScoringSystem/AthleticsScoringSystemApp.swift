@@ -18,7 +18,7 @@ struct AthleticsScoringSystemApp: App {
     
     var body: some Scene {
         WindowGroup {
-            EventsView()
+            MainView()
         }
     }
 }

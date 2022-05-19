@@ -16,7 +16,7 @@ struct EventView: View {
             HStack {
                 Text(athlete.name)
                 Text(athlete.school)
-                Text("\(athlete.score)")
+                Text((round(athlete.score * 1000) / 1000).description)
             }
         }
     }

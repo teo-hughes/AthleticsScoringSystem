@@ -12,6 +12,7 @@ import FirebaseDatabase
 class FirebaseViewModel: ObservableObject {
     @Published var athletes = [Athlete]()
     @Published var events = [Event]()
+    @Published var results = [Result]()
     
     func observeEvents() {
         let eventsRef = Database.database().reference().child("1Ir88Rs-GFnIjrifswFvxCJNAff8epolmsgVShuTpE5E/FirebaseData")
@@ -27,6 +28,7 @@ class FirebaseViewModel: ObservableObject {
             }
             
             self.athletes = tempAthletes
+            self.events = []
             var eventNames : [String] = []
             for athlete in self.athletes {
                 if !eventNames.contains(athlete.event) {
@@ -38,6 +40,22 @@ class FirebaseViewModel: ObservableObject {
                     self.events[index ?? 0].athletes.append(athlete)
                 }
             }
+        })
+    }
+    
+    func observeResults() {
+        let resultsRef = Database.database().reference().child("1Ir88Rs-GFnIjrifswFvxCJNAff8epolmsgVShuTpE5E/ResultsData")
+        resultsRef.observe(.value, with: { snapshot in
+            
+            var tempResults = [Result]()
+            for child in snapshot.children {
+                if let childSnapshot = child as? DataSnapshot,
+                   let dict = childSnapshot.value as? [String:Any],  let school = dict["School"] as? String, let ageGroup = dict["Age Group"] as? String, let points = dict["Points"] as? Int {
+                    let result = Result(school: school, ageGroup: ageGroup, points: points)
+                    tempResults.append(result)
+                }
+            }
+            self.results = tempResults
         })
     }
 }

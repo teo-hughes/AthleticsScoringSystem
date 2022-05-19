@@ -20,6 +20,7 @@ struct EventsView: View {
                     })
                 }
                 
+                
             }
             .onAppear {
                 viewModel.observeEvents()
