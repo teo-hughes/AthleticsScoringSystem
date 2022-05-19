@@ -13,11 +13,11 @@ struct MainView: View {
         TabView {
             ResultsView()
                 .tabItem {
-                    Label("Results", systemImage: "star")
+                    Label("Results", systemImage: "newspaper")
                 }
             EventsView()
                 .tabItem {
-                    Label("Events", systemImage: "circle")
+                    Label("Events", systemImage: "flag")
                 }
         }
     }

@@ -26,6 +26,17 @@ class FirebaseViewModel: ObservableObject {
                     tempAthletes.append(athlete)
                 }
             }
+            if tempAthletes.count > 1 {
+                for i in 0..<tempAthletes.count {
+                    
+                    for j in 0..<tempAthletes.count - i - 1 {
+                        
+                        if tempAthletes[j].position > tempAthletes[j + 1].position {
+                            tempAthletes.swapAt(j + 1, j)
+                        }
+                    }
+                }
+            }
             
             self.athletes = tempAthletes
             self.events = []
@@ -55,7 +66,20 @@ class FirebaseViewModel: ObservableObject {
                     tempResults.append(result)
                 }
             }
+            
+            if tempResults.count > 1 {
+                for i in 0..<tempResults.count {
+                    
+                    for j in 0..<tempResults.count - i - 1 {
+                        
+                        if tempResults[j].points < tempResults[j + 1].points {
+                            tempResults.swapAt(j + 1, j)
+                        }
+                    }
+                }
+            }
             self.results = tempResults
+            
         })
     }
 }

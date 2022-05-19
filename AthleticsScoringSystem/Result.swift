@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Result: Identifiable, Codable {
+struct Result: Identifiable, Codable, Hashable {
     var school: String
     var ageGroup: String
     var points: Int
