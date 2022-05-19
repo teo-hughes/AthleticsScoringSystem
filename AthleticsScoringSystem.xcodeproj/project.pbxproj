@@ -3,23 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0570426F46A494B4388E14E6 /* Pods_AthleticsScoringSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146D00EEB3030B942485CE4D /* Pods_AthleticsScoringSystem.framework */; };
 		250204E128365FF0004AA574 /* AthleticsScoringSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250204E028365FF0004AA574 /* AthleticsScoringSystemApp.swift */; };
-		250204E328365FF0004AA574 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250204E228365FF0004AA574 /* ContentView.swift */; };
 		250204E528365FF1004AA574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250204E428365FF1004AA574 /* Assets.xcassets */; };
 		250204E828365FF1004AA574 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250204E728365FF1004AA574 /* Preview Assets.xcassets */; };
+		250204F128366027004AA574 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 250204F028366027004AA574 /* GoogleService-Info.plist */; };
+		25020508283660D1004AA574 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25020507283660D1004AA574 /* EventsView.swift */; };
+		2502050C28366110004AA574 /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502050B28366110004AA574 /* FirebaseViewModel.swift */; };
+		2502050F2836611C004AA574 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502050E2836611C004AA574 /* Athlete.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		146D00EEB3030B942485CE4D /* Pods_AthleticsScoringSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AthleticsScoringSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		250204DD28365FF0004AA574 /* AthleticsScoringSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AthleticsScoringSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		250204E028365FF0004AA574 /* AthleticsScoringSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticsScoringSystemApp.swift; sourceTree = "<group>"; };
-		250204E228365FF0004AA574 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		250204E428365FF1004AA574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		250204E728365FF1004AA574 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		250204E928365FF1004AA574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		250204F028366027004AA574 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		25020507283660D1004AA574 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		2502050B28366110004AA574 /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
+		2502050E2836611C004AA574 /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		49951E6ECDDF5E9BB2782A13 /* Pods-AthleticsScoringSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthleticsScoringSystem.release.xcconfig"; path = "Target Support Files/Pods-AthleticsScoringSystem/Pods-AthleticsScoringSystem.release.xcconfig"; sourceTree = "<group>"; };
+		F060A56D0BCC92A46B27475B /* Pods-AthleticsScoringSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthleticsScoringSystem.debug.xcconfig"; path = "Target Support Files/Pods-AthleticsScoringSystem/Pods-AthleticsScoringSystem.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0570426F46A494B4388E14E6 /* Pods_AthleticsScoringSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07FED6A9661D2F218420CB8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F060A56D0BCC92A46B27475B /* Pods-AthleticsScoringSystem.debug.xcconfig */,
+				49951E6ECDDF5E9BB2782A13 /* Pods-AthleticsScoringSystem.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		250204D428365FF0004AA574 = {
 			isa = PBXGroup;
 			children = (
 				250204DF28365FF0004AA574 /* AthleticsScoringSystem */,
 				250204DE28365FF0004AA574 /* Products */,
+				07FED6A9661D2F218420CB8C /* Pods */,
+				72D3D25A4941DCE66610B448 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +75,10 @@
 			isa = PBXGroup;
 			children = (
 				250204E028365FF0004AA574 /* AthleticsScoringSystemApp.swift */,
-				250204E228365FF0004AA574 /* ContentView.swift */,
+				25020507283660D1004AA574 /* EventsView.swift */,
+				2502050B28366110004AA574 /* FirebaseViewModel.swift */,
+				2502050E2836611C004AA574 /* Athlete.swift */,
+				250204F028366027004AA574 /* GoogleService-Info.plist */,
 				250204E428365FF1004AA574 /* Assets.xcassets */,
 				250204E928365FF1004AA574 /* Info.plist */,
 				250204E628365FF1004AA574 /* Preview Content */,
@@ -69,6 +94,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		72D3D25A4941DCE66610B448 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				146D00EEB3030B942485CE4D /* Pods_AthleticsScoringSystem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 250204EC28365FF1004AA574 /* Build configuration list for PBXNativeTarget "AthleticsScoringSystem" */;
 			buildPhases = (
+				AF4BD4A27C71236FD5A952C8 /* [CP] Check Pods Manifest.lock */,
 				250204D928365FF0004AA574 /* Sources */,
 				250204DA28365FF0004AA574 /* Frameworks */,
 				250204DB28365FF0004AA574 /* Resources */,
+				25F2B6D15B1FF05B8B512A94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,18 +163,63 @@
 			files = (
 				250204E828365FF1004AA574 /* Preview Assets.xcassets in Resources */,
 				250204E528365FF1004AA574 /* Assets.xcassets in Resources */,
+				250204F128366027004AA574 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25F2B6D15B1FF05B8B512A94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AthleticsScoringSystem/Pods-AthleticsScoringSystem-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AthleticsScoringSystem/Pods-AthleticsScoringSystem-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AthleticsScoringSystem/Pods-AthleticsScoringSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF4BD4A27C71236FD5A952C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AthleticsScoringSystem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		250204D928365FF0004AA574 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250204E328365FF0004AA574 /* ContentView.swift in Sources */,
+				2502050C28366110004AA574 /* FirebaseViewModel.swift in Sources */,
 				250204E128365FF0004AA574 /* AthleticsScoringSystemApp.swift in Sources */,
+				25020508283660D1004AA574 /* EventsView.swift in Sources */,
+				2502050F2836611C004AA574 /* Athlete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +344,7 @@
 		};
 		250204ED28365FF1004AA574 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F060A56D0BCC92A46B27475B /* Pods-AthleticsScoringSystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +367,7 @@
 		};
 		250204EE28365FF1004AA574 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49951E6ECDDF5E9BB2782A13 /* Pods-AthleticsScoringSystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
